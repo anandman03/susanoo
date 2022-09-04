@@ -1,0 +1,106 @@
+{
+    "Box 8": {
+        "rating": "4.0/5",
+        "recommendations": ["thali", "rice bowls", "north indian"]
+    },
+    "Auntie Fung's": {
+        "rating": "4.0/5",
+        "recommendations": ["bowls", "dimsums", "baos"]
+    },
+    "Subway": {
+        "rating": "3.8/5",
+        "recommendations": ["wraps", "sandwich", "salads", "cookies"]
+    },
+    "California Burrito": {
+        "rating": "4.0/5",
+        "recommendations": ["rice bowls", "salads", "tacos", "quesadillas"]
+    },
+    "Truffles": {
+        "rating": "4.1/5",
+        "recommendations": ["rice bowls", "burgers", "wraps", "mains"]
+    },
+    "Third wave coffee": {
+        "rating": "4.5/5",
+        "recommendations": ["frappes", "latte", "cheesecake"]
+    },
+    "Starbucks": {
+        "rating": "4.1/5",
+        "recommendations": ["frappes", "latte", "cookies"]
+    },
+    "Dobaraa": {
+        "rating": "4/5",
+        "recommendations": ["mocktails", "drinks", "pasta", "appetizers"]
+    },
+    "Social": {
+        "rating": "4.1/5",
+        "recommendations": ["mocktails", "drinks", "appetizers", "meal box"]
+    },
+    "Meghna Foods": {
+        "rating": "4.5/5",
+        "recommendations": ["biryani", "curries"]
+    },
+    "Toscano": {
+        "rating": "3.9/5",
+        "recommendations": ["lasagna", "pizza"]
+    },
+    "MTR": {
+        "rating": "4.5/5",
+        "recommendations": ["south indian breafast", "bhath", "dosa"]
+    },
+    "Paris Panini": {
+        "rating": "4.5/5",
+        "recommendations": ["panini", "desserts"]
+    },
+    "Biryani By Kilo": {        
+        "rating": "4.1/5",
+        "recommendations": ["biryani", "combos"]
+    },
+    "Nandhini Deluxe": {
+        "rating": "3.9/5",
+        "recommendations": ["north indian", "combos", "biryani"]
+    },
+    "Leon Grill": {
+        "rating": "3.7/5",
+        "recommendations": ["burgers", "salads", "fries"]
+    },
+    "Paakashala": {
+        "rating": "4.2/5",
+        "recommendations": ["bhath", "curd vada", "combos", "idli", "sweets"]
+    },
+    "Faasos": {
+        "rating": "3.8/5",
+        "recommendations": ["rolls", "rice bowls"]
+    },
+    "Paratha Envy": {
+        "rating": "4.3/5",
+        "recommendations": ["parantha"]
+    },
+    "Brahmin's Thatte Idli": {
+        "rating": "4.4/5",
+        "recommendations": ["idli", "bhath", "uddina vada", "ragi roti"]
+    },
+    "Adiga's": {
+        "rating": "3.9/5",
+        "recommendations": ["south indian", "drinks", "combos"]
+    },
+    "Ghee and Turmeric": {
+        "rating": "4.0/5",
+        "recommendations": ["north indian", "desserts", "thali"]
+    },
+    "Bhartiya Jalpan": {
+        "rating": "3.9/5",
+        "recommendations": ["parantha", "chilla"]
+    },
+    "The Punjabi Rasoi": {
+        "rating": "3.9/5",
+        "recommendations": ["north indian", "desserts"]
+    },
+    "EatFit": {
+        "rating": "4.1/5",
+        "recommendations": ["thali", "rice bowls", "breakfast"]
+    },
+    "Grill Daddy": {
+        "rating": "4.4/5",
+        "recommendations": ["rice bowls", "burgers", "sandwich"]
+    }
+}
