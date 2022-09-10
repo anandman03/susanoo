@@ -33,8 +33,96 @@
             "rating": "9/10"
         },
         {
+            "title": "Ambarsariya",
+            "rating": "8.5/10"
+        },
+        {
+            "title": "Jatt and Juliet",
+            "rating": "9/10"
+        },
+        {
+            "title": "Punjab 1984",
+            "rating": "8.5/10"
+        },
+        {
+            "title": "Sardarji",
+            "rating": "7.5/10"
+        },
+        {
+            "title": "Super Singh",
+            "rating": "8/10"
+        },
+        {
+            "title": "Mukhtiar Chadha",
+            "rating": "7.5/10"
+        },
+        {
+            "title": "Jihne Mera Dil Luteya",
+            "rating": "8/10"
+        },
+        {
+            "title": "Angrej",
+            "rating": "8.5/10"
+        },
+        {
+            "title": "Ardaas",
+            "rating": "8.3/10"
+        },
+        {
+            "title": "Carry on Jatta",
+            "rating": "8.3/10"
+        },
+        {
+            "title": "Mr $ Mrs 420",
+            "rating": "8.5/10"
+        },
+        {
+            "title": "Ambarsariya",
+            "rating": "8.5/10"
+        },
+        {
             "title": "The Pianist",
             "rating": ""
+        },
+        {
+            "title": "Posti",
+            "rating": ""
+        },
+        {
+            "title": "Waleed",
+            "rating": ""
+        },
+        {
+            "title": "Chal Mera Putt",
+            "rating": ""
+        },
+        {
+            "title": "Jamraud",
+            "rating": ""
+        },
+        {
+            "title": "Slow Burn",
+            "rating": ""
+        },
+        {
+            "title": "Vadhayiyaan Ji Vadhayiyaan",
+            "rating": "8.5/10"
+        },
+        {
+            "title": "Bailaras",
+            "rating": "8/10"
+        },
+        {
+            "title": "Bambukat",
+            "rating": "8.2/10"
+        },
+        {
+            "title": "Vekh Baraatan Challiyan",
+            "rating": "8.5/10"
+        },
+        {
+            "title": "Saadi Love Story",
+            "rating": "9/10"
         },
         {
             "title": "Recount",
@@ -222,7 +310,7 @@
     "documentaries": [
         {
             "title": "House of Secrets", 
-            "rating": "6/10"
+            "rating": "8/10"
         },
         {
             "title": "Bad Boy Billionaires", 
@@ -231,6 +319,10 @@
         {
             "title": "Wild Wild Country",
             "rating": "5.5/10"
+        },
+        {
+            "title": "Abstract: The Art of Design",
+            "rating": ""
         }
     ],
     "anime": [

@@ -102,5 +102,17 @@
     "Grill Daddy": {
         "rating": "4.4/5",
         "recommendations": ["rice bowls", "burgers", "sandwich"]
+    },
+    "Low Carb and Keto": {
+        "rating": "4.2/5",
+        "recommendations": ["meal box", "rolls", "sandwich", "north indian"]
+    },
+    "Manjit Da Dhaba": {
+        "rating": "4.3/5",
+        "recommendations": ["north indian", "parantha"]
+    },
+    "Ajji Ruchi Kitchen": {
+        "rating": "4.6/5",
+        "recommendations": ["north indian", "parantha", "breakfast"]
     }
 }
