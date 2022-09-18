@@ -1,4 +1,22 @@
-{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="content">
+        <!-- Insert list here -->
+    </div>
+
+</body>
+
+<script>
+
+const content = {
     "movies": [
         {
             "title": "Shawshank Redemption",
@@ -118,10 +136,6 @@
         },
         {
             "title": "Vekh Baraatan Challiyan",
-            "rating": "8.5/10"
-        },
-        {
-            "title": "Sita Ramam",
             "rating": "8.5/10"
         },
         {
@@ -356,3 +370,32 @@
         }
     ]
 }
+
+
+function main() {
+    const types = ["anime", "documentaries", "movies", "tv series"]
+
+    const contentTag = document.querySelector(".content");
+    for (const type of types) {
+        let divTag = document.createElement("div");
+        let headerTag = document.createElement("h3");
+        headerTag.innerText += type.toUpperCase();
+        divTag = divTag.appendChild(headerTag);
+
+        let listTag = document.createElement("ol");
+        for (const item of content[type]) {
+            let itemTag = document.createElement("li");
+            itemTag.innerText += `${item["title"]} (${item["rating"]})`;
+            itemTag.style.color = (item["rating"] == "-" ? "green" : (item["rating"] == "" ? "red" : "black"));
+            listTag.appendChild(itemTag);
+        }
+        divTag.appendChild(listTag);
+        contentTag.appendChild(divTag);
+    }
+    return;
+}
+
+main()
+
+</script>
+</html>
