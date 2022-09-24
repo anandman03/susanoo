@@ -627,7 +627,6 @@ const content = {
     ]
 }
 
-
 function main() {
     const types = ["anime", "documentaries", "movies", "tv series"]
 
@@ -637,6 +636,8 @@ function main() {
         let headerTag = document.createElement("h3");
         headerTag.innerText += type.toUpperCase();
         divTag = divTag.appendChild(headerTag);
+
+        content[type].sort((a, b) => parseFloat(String(a["rating"]).split("/")[0]) > parseFloat(String(b["rating"]).split("/")[0]) ? -1 : 1);
 
         let listTag = document.createElement("ol");
         for (const item of content[type]) {
