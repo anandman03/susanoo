@@ -8,17 +8,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
+        * {
+            
+            text-align: center;
+        }
         li {
             font-size: 14px;
+            list-style: none;
+        }
+        .navbar {
+            justify-content: center;
         }
     </style>
 
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark nav">
         <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="#anime">Anime</a></li>
+            <li class="nav-item"><a class="nav-link" href="#anime">Anime</a></li>
             <li class="nav-item"><a class="nav-link" href="#documentaries">Documentaries</a></li>
             <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
             <li class="nav-item"><a class="nav-link" href="#tv series">TV Series</a></li>
@@ -564,7 +572,7 @@ const content = {
         },
         {
             "title": "Abstract: The Art of Design",
-            "rating": "-"
+            "rating": "8.4/10"
         },
         {
             "title": "Fleabag",
@@ -701,6 +709,10 @@ const content = {
             "rating": "4.2/5"
         },
         {
+            "title": "Illusions: The Adventures of a Reluctant Messiah",
+            "rating": "-"
+        },
+        {
             "title": "Hyperion",
             "rating": ""
         },
@@ -711,33 +723,60 @@ const content = {
     ]
 }
 
-function main() {
-    const types = ["anime", "documentaries", "movies", "tv series", "books"]
+function shiftContent(contentType = "anime") {
+    if (contentType[0] == "#") {
+        contentType = contentType.substring(1);
+    }
+
+    content[contentType].sort((a, b) => parseFloat(String(a["rating"]).split("/")[0]) > parseFloat(String(b["rating"]).split("/")[0]) ? -1 : 1);
 
     const contentTag = document.querySelector(".content");
-    for (const type of types) {
-        let divTag = document.createElement("div");
-        let headerTag = document.createElement("h3");
-        headerTag.setAttribute("id", type);
-        headerTag.innerText += type.toUpperCase();
-        divTag = divTag.appendChild(headerTag);
+    contentTag.innerHTML = ""; // clear buffer
 
-        content[type].sort((a, b) => parseFloat(String(a["rating"]).split("/")[0]) > parseFloat(String(b["rating"]).split("/")[0]) ? -1 : 1);
+    let divTag = document.createElement("div");
+    let headerTag = document.createElement("h5");
+    headerTag.setAttribute("id", contentType);
+    headerTag.innerText += contentType.toUpperCase();
 
-        let listTag = document.createElement("ol");
-        for (const item of content[type]) {
-            let itemTag = document.createElement("li");
-            itemTag.innerText += `${item["title"]} (${item["rating"]})`;
-            itemTag.style.color = (item["rating"] == "-" ? "green" : (item["rating"] == "" ? "red" : "black"));
-            listTag.appendChild(itemTag);
-        }
-        divTag.appendChild(listTag);
-        contentTag.appendChild(divTag);
+    let listTag = document.createElement("ul");
+    listTag.className = "list-group";
+
+    let count = 1;
+    for (const item of content[contentType]) {
+        let itemTag = document.createElement("li");
+        itemTag.className = "list-group-item";
+        itemTag.innerText += `${count}. ${item["title"]} (${item["rating"]})`;
+        itemTag.style.color = (item["rating"] == "-" ? "green" : (item["rating"] == "" ? "red" : "black"));
+        listTag.appendChild(itemTag);
+        ++count;
+    }
+    divTag.appendChild(headerTag);
+    divTag.appendChild(listTag);
+    contentTag.appendChild(divTag);
+    return;
+}
+
+function enableEvents() {
+    const elements = document.querySelectorAll("li");
+    for (let index = 0 ; index < elements.length ; ++index) {
+        elements[index].addEventListener("click", () => {
+            shiftContent(elements[index].getElementsByTagName("a")[0].getAttribute("href"))
+        }, true);
     }
     return;
 }
 
-main()
+function setDefaultContent(defaultType) {
+    shiftContent(defaultType);
+}
+
+function main() {
+    enableEvents();
+    setDefaultContent("anime");
+    return;
+}
+
+main();
 
 </script>
 </html>
